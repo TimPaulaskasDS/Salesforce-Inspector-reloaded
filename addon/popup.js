@@ -1972,7 +1972,7 @@ function getRecordId(href) {
   let url = new URL(href);
   // Find record ID from URL
   // Salesforce and Console (+ Hyperforce China Lightning & Classic)
-  if (url.hostname.endsWith(".salesforce.com") || url.hostname.endsWith(".salesforce.mil") || url.hostname.endsWith(".sfcrmapps.cn") || url.hostname.endsWith(".sfcrmproducts.cn")) {
+  if (url.hostname.endsWith(".salesforce.com") || url.hostname.endsWith(".salesforce-setup.com") || url.hostname.endsWith(".salesforce.mil") || url.hostname.endsWith(".sfcrmapps.cn") || url.hostname.endsWith(".sfcrmproducts.cn")) {
     let match = url.pathname.match(/\/([a-zA-Z0-9]{3}|[a-zA-Z0-9]{15}|[a-zA-Z0-9]{18})(?:\/|$)/);
     if (match) {
       let res = match[1];
